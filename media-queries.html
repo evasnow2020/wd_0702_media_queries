@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Media Queries</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      div {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+        background: #ccc;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      /* Mobile devices - max width 480px */
+      @media only screen and (max-width: 480px) {
+        div {
+          background: yellow;
+        }
+      }
+
+      /* Tablets - between 481px and 768px */
+      @media only screen and (min-width: 481px) and (max-width: 768px) {
+        div {
+          background: blue;
+        }
+
+        p {
+          color: white;
+        }
+      }
+
+      /* Desktop - min width 769px */
+      @media only screen and (min-width: 769px) {
+        div {
+          background: green;
+        }
+
+        p {
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab officia
+        fugit impedit sit architecto ut vel ea sed! Reprehenderit, alias unde
+        nisi ut commodi atque consequatur est dicta quia obcaecati.
+      </p>
+    </div>
+  </body>
+</html>
